@@ -3,7 +3,7 @@ from pathlib import Path
 from segmentation_module.Segmenter import Segmenter
 from extraction_module.Extraction_Module import Extractor
 from downtream_tasks.spikein.SpikeIn import SpikeIn
-from extraction_module.data.Data_Handler import CustomImageDataset
+from extraction_module.Data_Handler import CustomImageDataset
 from torch.utils.data import DataLoader
 import numpy as np
 import pandas as pd
@@ -23,7 +23,7 @@ def main():
                       )   
         
     print("\n📠 Segmenting frames in directory: ", config['data_dir'])
-    segmentor_model.load_data(Path(config['data_dir'])) # TODO: Run this on multiple cores
+    segmentor_model.load_data(Path(config['data_dir'])) 
     print("\n📠 Combining 4 scans into 1 image ...")
     segmentor_model.preprocess()
     print("\n📠 Computing masks ...")
