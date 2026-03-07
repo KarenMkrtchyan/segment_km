@@ -2,6 +2,12 @@
 Pipeline for detecting circulating tumor cells from whole slide blood microscopy images. 
 Has modules for loading in individual scans, segmenting and croping cells, and extracting features embeddings for downstream tasks
 
+### Pipeline image
+![pipeline image](./high_level.JPG)
+
+### Demo video
+[![Watch the video](https://img.youtube.com/vi/z6A8fGhQNYg/hqdefault.jpg)](https://www.youtube.com/watch?v=z6A8fGhQNYg)
+
 ## Conda env
 ```
 conda create --name cellpose python=3.10
